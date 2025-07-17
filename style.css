@@ -394,4 +394,30 @@ footer {
 .payment-methods p {
   font-size: 1.1rem;
 }
+.order-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #555;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.order-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.order-box ol,
+.order-box ul {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.payment-reminder,
+.order-disclaimer {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
 
