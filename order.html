@@ -52,45 +52,48 @@
       </section>
 
       <section class="paypal-order">
-        <h3>Choose a Plan to Purchase</h3>
+  <h3>Choose a Plan to Purchase</h3>
+  <div class="plan-selection">
+    
+    <div class="plan-card">
+      <h4>Plan A – Code Only</h4>
+      <p class="plan-desc">Source code only. No hosting or support.</p>
+      <p class="plan-price">$5.99 one-time</p>
+      <div id="paypal-container-QPKYDHKT7DZ9U"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "QPKYDHKT7DZ9U",
+        }).render("#paypal-container-QPKYDHKT7DZ9U");
+      </script>
+    </div>
 
-        <!-- Plan A -->
-        <div class="paypal-plan">
-          <h4>Plan A – Code Only ($5.99 one-time)</h4>
-          <p>Just the source code. No hosting or support included.</p>
-          <div id="paypal-container-QPKYDHKT7DZ9U"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "QPKYDHKT7DZ9U",
-            }).render("#paypal-container-QPKYDHKT7DZ9U");
-          </script>
-        </div>
+    <div class="plan-card">
+      <h4>Plan B – Hosted + Support</h4>
+      <p class="plan-desc">Includes hosting, updates, and full support.</p>
+      <p class="plan-price">$6.99/month</p>
+      <div id="paypal-button-container-P-0CA68502J79848250NB4XJXI"></div>
+      <script>
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'horizontal',
+            label: 'subscribe'
+          },
+          createSubscription: function(data, actions) {
+            return actions.subscription.create({
+              plan_id: 'P-0CA68502J79848250NB4XJXI'
+            });
+          },
+          onApprove: function(data, actions) {
+            alert("Thanks for subscribing! ID: " + data.subscriptionID);
+          }
+        }).render('#paypal-button-container-P-0CA68502J79848250NB4XJXI');
+      </script>
+    </div>
 
-        <!-- Plan B -->
-        <div class="paypal-plan">
-          <h4>Plan B – Code + Hosting + Support ($6.99/month)</h4>
-          <p>Includes code, hosting, updates, and setup help.</p>
-          <div id="paypal-button-container-P-0CA68502J79848250NB4XJXI"></div>
-          <script>
-            paypal.Buttons({
-              style: {
-                  shape: 'rect',
-                  color: 'gold',
-                  layout: 'horizontal',
-                  label: 'subscribe'
-              },
-              createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                  plan_id: 'P-0CA68502J79848250NB4XJXI'
-                });
-              },
-              onApprove: function(data, actions) {
-                alert("Thank you for subscribing! Subscription ID: " + data.subscriptionID);
-              }
-            }).render('#paypal-button-container-P-0CA68502J79848250NB4XJXI');
-          </script>
-        </div>
-      </section>
+  </div>
+</section>
 
       <section class="benefits">
         <h3>Why Order From Us?</h3>
