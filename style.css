@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #2f0743, #000000);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+header {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  max-width: 700px;
+  margin: auto;
+  opacity: 0.85;
+  font-size: 1.1rem;
+}
+
+.interest {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.interest button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #6a0dad;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.interest button:hover {
+  background: #832de2;
+}
+
+.plans {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+.plan {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #555;
+  padding: 2rem;
+  border-radius: 12px;
+}
+.plan h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.plan p {
+  margin: 0.5rem 0;
+}
+.plan .price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+  .plans {
+    flex-direction: row;
+  }
+}
