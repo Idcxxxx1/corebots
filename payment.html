@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CoreBots – Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.paypal.com/sdk/js?client-id=AX_eRCZCIA0PaFPnzMTCzKFBVlnUF75dABEvDT6N6fBv1DuoC_69uhUvg6Meh5B9Z8KRYUUsgpWys77l&components=buttons,hosted-buttons&vault=true&intent=subscription"></script>
+</head>
+<body>
+
+  <nav>
+    <h1><a href="index.html" class="logo-link">CoreBots</a></h1>
+    <ul>
+      <li><a href="plans.html">Plans</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="paypal-order">
+      <h3>Choose a Plan to Purchase</h3>
+      <div class="plan-selection">
+        
+        <!-- Plan A -->
+        <div class="plan-card">
+          <h4>Plan A – Code Only</h4>
+          <p class="plan-desc">Source code only. No hosting or support.</p>
+          <p class="plan-price">$5.99 one-time</p>
+          <div id="paypal-container-QPKYDHKT7DZ9U"></div>
+          <script>
+            paypal.HostedButtons({
+              hostedButtonId: "QPKYDHKT7DZ9U",
+            }).render("#paypal-container-QPKYDHKT7DZ9U");
+          </script>
+        </div>
+
+        <!-- Plan B -->
+        <div class="plan-card">
+          <h4>Plan B – Hosted + Support</h4>
+          <p class="plan-desc">Includes hosting, updates, and full support.</p>
+          <p class="plan-price">$6.99/month</p>
+          <div id="paypal-button-container-P-0CA68502J79848250NB4XJXI"></div>
+          <script>
+            paypal.Buttons({
+              style: {
+                shape: 'rect',
+                color: 'gold',
+                layout: 'horizontal',
+                label: 'subscribe'
+              },
+              createSubscription: function(data, actions) {
+                return actions.subscription.create({
+                  plan_id: 'P-0CA68502J79848250NB4XJXI'
+                });
+              },
+              onApprove: function(data, actions) {
+                alert("Thanks for subscribing! ID: " + data.subscriptionID);
+              }
+            }).render('#paypal-button-container-P-0CA68502J79848250NB4XJXI');
+          </script>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 CoreBots. All rights reserved.
+  </footer>
+
+</body>
+</html>
