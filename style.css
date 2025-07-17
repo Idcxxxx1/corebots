@@ -388,21 +388,21 @@ footer {
 }
 /* Order Page: PayPal Plans */
 .paypal-order {
-  max-width: 900px;
-  margin: 3rem auto;
+  max-width: 1000px;
+  margin: 4rem auto;
   padding: 2rem;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid #555;
   border-radius: 15px;
   box-shadow: 0 0 12px rgba(104, 32, 188, 0.2);
   text-align: center;
-  color: #fff;
+  color: white;
 }
 
 .paypal-order h3 {
   font-size: 2rem;
-  color: #bf94e4;
   margin-bottom: 2rem;
+  color: #bf94e4;
 }
 
 .plan-selection {
@@ -417,7 +417,7 @@ footer {
   border: 1px solid #444;
   border-radius: 12px;
   padding: 1.5rem;
-  width: 280px;
+  width: 300px;
   color: white;
   box-shadow: 0 4px 8px rgba(106, 13, 173, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -444,4 +444,11 @@ footer {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+}
+
+.paypal-box {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(106, 13, 173, 0.25);
 }
