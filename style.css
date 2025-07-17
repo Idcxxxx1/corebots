@@ -364,28 +364,3 @@ footer {
   font-size: 1.1rem;
   line-height: 1.6;
 }
-
-.payment-reminder {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid #555;
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  box-shadow: 0 0 12px rgba(104, 32, 188, 0.2);
-}
-
-.payment-reminder h3 {
-  font-size: 1.5rem;
-  color: #bf94e4;
-  margin-bottom: 1rem;
-}
-
-.interest button:hover {
-  background: #832de2;
-  box-shadow: 0 6px 12px rgba(131, 45, 226, 0.6);
-}
