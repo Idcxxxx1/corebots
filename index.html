@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PGRP Bot Hosting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      background: linear-gradient(135deg, #2f0743, #000000);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      position: sticky;
+      top: 0;
+    }
+    nav h1 {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      max-width: 700px;
+      margin: auto;
+      opacity: 0.85;
+    }
+    .plans {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .plan {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #555;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    .plan h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .plan p {
+      margin: 0.5rem 0;
+    }
+    .plan .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      opacity: 0.5;
+    }
+    @media (min-width: 768px) {
+      .plans {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>PGRP Bots</h1>
+    <ul>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#order">Order</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>Affordable Discord Bots for RP Servers</h2>
+    <p>Perfect for Greenville Roblox roleplay communities. Instantly get a basic RP session bot with commands like <code>/startup</code>, <code>/ea</code>, <code>/release</code>, and more.</p>
+  </header>
+
+  <section class="plans" id="plans">
+    <div class="plan">
+      <h3>Plan A – Code Only</h3>
+      <p>Just the source code. No hosting, no support.</p>
+      <p>Includes commands: /startup, /settingup, /ea, /release, /reinvites, /end</p>
+      <p class="price">$5.99 one-time</p>
+    </div>
+    <div class="plan">
+      <h3>Plan B – Code + Hosting + Support</h3>
+      <p>We'll host your bot, offer basic setup help, and updates.</p>
+      <p>Same command set, but with active support & uptime.</p>
+      <p class="price">$6.99/month</p>
+    </div>
+  </section>
+
+  <section id="order" style="padding: 2rem; text-align: center;">
+    <h2>Ready to Order?</h2>
+    <p>DM us on Discord: <strong>@yourbotdev</strong><br>or <a href="https://github.com/yourgithubusername" style="color: #aaa;">view our GitHub</a></p>
+  </section>
+
+  <section id="faq" style="padding: 2rem;">
+    <h2 style="text-align: center;">FAQ</h2>
+    <ul style="max-width: 700px; margin: auto;">
+      <li><strong>Q: Who is this bot for?</strong><br>A: Small to mid-sized Greenville RP servers who need basic session control tools.</li>
+      <br>
+      <li><strong>Q: Can I get custom features?</strong><br>A: Not on Plan A. Plan B users may request light changes.</li>
+      <br>
+      <li><strong>Q: What are the commands?</strong><br>A: /startup, /settingup, /ea, /release, /reinvites, /end</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 PGRP Bots. All rights reserved.
+  </footer>
+
+</body>
+</html>
