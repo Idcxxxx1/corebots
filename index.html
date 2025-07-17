@@ -7,15 +7,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  document.querySelectorAll('.faq-question').forEach(question => {
-    question.addEventListener('click', () => {
-      const item = question.parentElement;
-      item.classList.toggle('open');
-    });
-  });
-</script>
-
 <body>
 
   <nav>
@@ -60,6 +51,14 @@
   <footer>
     &copy; 2025 CoreBots. All rights reserved.
   </footer>
-
+<script>
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
+  
 </body>
 </html>
