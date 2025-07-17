@@ -340,6 +340,50 @@ footer {
   transition: background 0.3s ease;
   box-shadow: 0 4px 8px rgba(106, 13, 173, 0.4);
 }
+.steps-box {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #555;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 12px rgba(104, 32, 188, 0.2);
+}
+
+.steps-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #bf94e4;
+}
+
+.steps-box ol {
+  padding-left: 1.5rem;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.payment-reminder {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #555;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(104, 32, 188, 0.2);
+}
+
+.payment-reminder h3 {
+  font-size: 1.5rem;
+  color: #bf94e4;
+  margin-bottom: 1rem;
+}
 
 .interest button:hover {
   background: #832de2;
