@@ -25,17 +25,37 @@
       <div class="plan-selection">
         
         <!-- Plan A -->
-        <div class="plan-card">
-          <h4>Plan A – Code Only</h4>
-          <p class="plan-desc">Source code only. No hosting or support.</p>
-          <p class="plan-price">$5.99 one-time</p>
-          <div id="paypal-container-QPKYDHKT7DZ9U"></div>
-          <script>
-            paypal.HostedButtons({
-              hostedButtonId: "QPKYDHKT7DZ9U",
-            }).render("#paypal-container-QPKYDHKT7DZ9U");
-          </script>
-        </div>
+<div class="plan-card">
+  <h4>Plan A – Code Only</h4>
+  <p class="plan-desc">Source code only. No hosting or support.</p>
+  <p class="plan-price">$5.99 one-time</p>
+  <div id="paypal-button-planA"></div>
+  <script>
+    paypal.Buttons({
+      style: {
+        shape: 'rect',
+        color: 'gold',
+        layout: 'horizontal',
+        label: 'pay'
+      },
+      createOrder: function(data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '5.99'
+            },
+            description: 'Plan A – Code Only'
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+          alert('Thanks for your purchase, ' + details.payer.name.given_name + '!');
+        });
+      }
+    }).render('#paypal-button-planA');
+  </script>
+</div>
 
         <!-- Plan B -->
         <div class="plan-card">
