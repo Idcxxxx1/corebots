@@ -25,88 +25,51 @@
   </nav>
 
   <main>
-    <section class="order-section">
-      <h2>How to Order</h2>
+  <section class="order-section">
+    <h2>How to Order</h2>
 
-      <div class="disclaimer">
-        Before ordering please read our order policy to avoid any problems.
-      </div>
+    <div class="disclaimer">
+      Before ordering please read our order policy to avoid any problems.
+    </div>
 
-      <div class="steps-box">
-        <h3>Steps to Order</h3>
-        <ol>
-          <li>Join our Discord server.</li>
-          <li>Create a ticket in the order channel.</li>
-          <li>Send proof of your PayPal payment.</li>
-        </ol>
-      </div>
+    <div class="steps-box">
+      <h3>Steps to Order</h3>
+      <ol>
+        <li>Join our Discord server.</li>
+        <li>Create a ticket in the order channel.</li>
+        <li>Wait for someone to assist you.</li>
+      </ol>
+    </div>
 
-      <a href="https://discord.gg/PeUB26RtKx" target="_blank" rel="noopener">
-        <button class="discord-button">Join Discord</button>
+    <a href="https://discord.gg/PeUB26RtKx" target="_blank" rel="noopener">
+      <button class="discord-button">Join Discord</button>
+    </a>
+
+    <!-- ✅ Continue Button -->
+    <div class="continue-box">
+      <p>Already familiar with our process?</p>
+      <a href="payment.html">
+        <button class="continue-button">Continue to Order</button>
       </a>
-
-      <section class="payment-reminder">
-        <h3>Payment Method</h3>
-        <p>We only accept payments via <strong>PayPal</strong>.</p>
-        <p>All transactions are securely processed through our business account.</p>
-      </section>
-
-      <section class="paypal-order">
-  <h3>Choose a Plan to Purchase</h3>
-  <div class="plan-selection">
-    
-    <div class="plan-card">
-      <h4>Plan A – Code Only</h4>
-      <p class="plan-desc">Source code only. No hosting or support.</p>
-      <p class="plan-price">$5.99 one-time</p>
-      <div id="paypal-container-QPKYDHKT7DZ9U"></div>
-      <script>
-        paypal.HostedButtons({
-          hostedButtonId: "QPKYDHKT7DZ9U",
-        }).render("#paypal-container-QPKYDHKT7DZ9U");
-      </script>
     </div>
 
-    <div class="plan-card">
-      <h4>Plan B – Hosted + Support</h4>
-      <p class="plan-desc">Includes hosting, updates, and full support.</p>
-      <p class="plan-price">$6.99/month</p>
-      <div id="paypal-button-container-P-0CA68502J79848250NB4XJXI"></div>
-      <script>
-        paypal.Buttons({
-          style: {
-            shape: 'rect',
-            color: 'gold',
-            layout: 'horizontal',
-            label: 'subscribe'
-          },
-          createSubscription: function(data, actions) {
-            return actions.subscription.create({
-              plan_id: 'P-0CA68502J79848250NB4XJXI'
-            });
-          },
-          onApprove: function(data, actions) {
-            alert("Thanks for subscribing! ID: " + data.subscriptionID);
-          }
-        }).render('#paypal-button-container-P-0CA68502J79848250NB4XJXI');
-      </script>
-    </div>
-
-  </div>
-</section>
-
-      <section class="benefits">
-        <h3>Why Order From Us?</h3>
-        <ul>
-          <li>Setup within 24h–48h</li>
-          <li>Friendly developers</li>
-          <li>Trusted bot systems</li>
-          <li>Secure payments & great service</li>
-        </ul>
-      </section>
+    <section class="payment-reminder">
+      <h3>Payment Method</h3>
+      <p>We only accept payments via <strong>PayPal</strong>.</p>
+      <p>All transactions are securely processed through our business account.</p>
     </section>
-  </main>
 
+    <section class="benefits">
+      <h3>Why Order From Us?</h3>
+      <ul>
+        <li>Setup within 24h–48h</li>
+        <li>Friendly developers</li>
+        <li>Trusted bot systems</li>
+        <li>Secure payments & great service</li>
+      </ul>
+    </section>
+  </section>
+</main>
   <footer>
     &copy; 2025 CoreBots. All rights reserved.
   </footer>
