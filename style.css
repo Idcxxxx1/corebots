@@ -17,8 +17,8 @@ header {
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
-  font-weight: bold;
+  margin-left: 1rem;
+  font-weight: 600;
 }
 
 nav a:hover {
@@ -29,29 +29,38 @@ nav a:hover {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
+  text-align: center;
 }
 
 h1, h2, h3 {
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 p {
-  text-align: center;
   color: #ccc;
+  font-size: 1.1rem;
 }
 
 .btn {
   display: inline-block;
+  margin-top: 1rem;
   background-color: #6a0dad;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .btn:hover {
   background-color: #8f3aff;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .plan-box {
@@ -59,9 +68,8 @@ p {
   padding: 2rem;
   border-radius: 12px;
   border: 1px solid #444;
-  width: 300px;
+  width: 280px;
   text-align: center;
-  color: white;
 }
 
 .plan-box ul {
@@ -72,4 +80,12 @@ p {
 
 .plan-box li {
   margin-bottom: 0.5rem;
+}
+
+.faq-item {
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #444;
 }
