@@ -11,7 +11,6 @@ body {
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.3);
@@ -19,12 +18,21 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
+  gap: 2rem;
 }
+
 nav h1 {
   font-weight: 800;
   font-size: 1.5rem;
   margin: 0;
 }
+
+.nav-links {
+  flex-grow: 1; /* take remaining space */
+  display: flex;
+  justify-content: center; /* center the links */
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -32,6 +40,7 @@ nav ul {
   margin: 0;
   padding: 0;
 }
+
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -39,6 +48,7 @@ nav ul li a {
   font-size: 1rem;
   transition: color 0.3s ease;
 }
+
 nav ul li a:hover {
   color: #832de2;
 }
