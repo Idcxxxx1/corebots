@@ -1,8 +1,12 @@
+/* Reset and base styles */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   color: white;
   background: linear-gradient(135deg, #2f0743, #000000);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -19,44 +23,58 @@ nav {
 nav h1 {
   font-weight: 800;
   font-size: 1.5rem;
+  margin: 0;
 }
 nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #832de2;
 }
 
+/* Header */
 header {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 2rem;
+  flex-shrink: 0;
 }
 header h2 {
-  font-size: 2.5rem;
+  font-size: 2.75rem;
   margin-bottom: 0.5rem;
 }
 header p {
   max-width: 700px;
-  margin: auto;
+  margin: 0.5rem auto;
   opacity: 0.85;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
+/* Interest Section */
 .interest {
   text-align: center;
   padding: 3rem 2rem;
+  flex-shrink: 0;
 }
 .interest button {
   margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
+  padding: 0.85rem 2rem;
   background: #6a0dad;
   border: none;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1.1rem;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -65,42 +83,120 @@ header p {
   background: #832de2;
 }
 
+/* FAQ Section */
+.faq-section {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+.faq-item {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.faq-item p:first-child {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Plans Page */
+main {
+  flex-grow: 1;
+}
 .plans {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 2.5rem;
+  padding: 3rem 1.5rem;
   max-width: 900px;
   margin: auto;
 }
 .plan {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid #555;
-  padding: 2rem;
-  border-radius: 12px;
+  border-radius: 15px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 0 12px rgba(104, 32, 188, 0.4);
+  transition: transform 0.3s ease;
+}
+.plan:hover {
+  transform: translateY(-5px);
 }
 .plan h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 .plan p {
-  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
 }
-.plan .price {
-  font-size: 1.25rem;
-  font-weight: bold;
+.price {
+  font-size: 1.5rem;
+  font-weight: 800;
   margin-top: 1rem;
+  color: #bf94e4;
 }
 
+/* Responsive two-column layout on wider screens */
+@media (min-width: 768px) {
+  .plans {
+    flex-direction: row;
+  }
+  .plan {
+    flex: 1;
+  }
+}
+
+/* Order Page */
+.order-section {
+  max-width: 600px;
+  margin: 4rem auto 3rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+.order-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.order-section p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.discord-link {
+  font-weight: 700;
+  color: #bf94e4;
+  word-break: break-word;
+}
+.discord-button {
+  margin-top: 1rem;
+  padding: 0.85rem 2rem;
+  background: #6a0dad;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.discord-button:hover {
+  background: #832de2;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 2rem;
   font-size: 0.9rem;
   opacity: 0.5;
-}
-
-@media (min-width: 768px) {
-  .plans {
-    flex-direction: row;
-  }
+  flex-shrink: 0;
 }
