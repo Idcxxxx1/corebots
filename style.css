@@ -305,6 +305,46 @@ footer {
   margin-bottom: 1rem;
   color: #bf94e4;
 }
+.interest {
+  text-align: center;
+  padding: 3rem 2rem 4rem; /* More bottom padding for spacing */
+  background: rgba(104, 32, 188, 0.15); /* subtle purple background to stand out */
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 3rem auto 4rem;
+  box-shadow: 0 0 15px rgba(104, 32, 188, 0.3);
+  flex-shrink: 0;
+}
+
+.interest h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #bf94e4;
+}
+
+.interest p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #eee;
+}
+
+.interest button {
+  padding: 1rem 2.5rem;
+  background: #6a0dad;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(106, 13, 173, 0.4);
+}
+
+.interest button:hover {
+  background: #832de2;
+  box-shadow: 0 6px 12px rgba(131, 45, 226, 0.6);
+}
 
 .payment-methods p {
   font-size: 1.1rem;
