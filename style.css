@@ -275,4 +275,38 @@ footer {
   font-size: 0.9rem;
   opacity: 0.6;
 }
+.disclaimer {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #555;
+  border-radius: 15px;
+  font-size: 1rem;
+  color: #bf94e4;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(104, 32, 188, 0.2);
+}
+
+.payment-methods {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 2rem 2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid #555;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(104, 32, 188, 0.4);
+  text-align: center;
+  color: white;
+}
+
+.payment-methods h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #bf94e4;
+}
+
+.payment-methods p {
+  font-size: 1.1rem;
+}
 
