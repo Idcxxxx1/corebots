@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You – CoreBots</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fb;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .thank-you-box {
+      background: #ffffff;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    .thank-you-box h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2c2f48;
+    }
+    .thank-you-box p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+    .instructions {
+      text-align: left;
+      background: #f1f3f7;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+    }
+    .instructions ol {
+      padding-left: 1.2rem;
+    }
+    .instructions li {
+      margin-bottom: 0.75rem;
+    }
+    .discord-button {
+      background-color: #5865F2;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+    .discord-button:hover {
+      background-color: #4752c4;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background: #f1f3f7;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="thank-you-box">
+      <h2>Thank You for Your Purchase!</h2>
+      <p>Your order has been received and is now being processed.</p>
+
+      <div class="instructions">
+        <h3>Next Steps:</h3>
+        <ol>
+          <li>Click the button below to join our Discord server.</li>
+          <li>In the Discord, go to <strong>#after-order</strong> and create a ticket.</li>
+          <li>Once your ticket is open, upload a screenshot or receipt of your PayPal payment.</li>
+          <li>Our staff will review it and assist you as soon as possible.</li>
+        </ol>
+      </div>
+
+      <a href="https://discord.gg/9RmRzXcaFH" target="_blank" class="discord-button">Join Discord</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 CoreBots. All rights reserved.
+  </footer>
+
+</body>
+</html>
