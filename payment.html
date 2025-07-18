@@ -26,7 +26,7 @@
         <!-- Plan A: Hosted Button (HTML Form Version) -->
 <div class="plan-card">
   <h4>Plan A – Code Only</h4>
-  <p class="plan-desc">Source code only. No hosting or support.</p>
+  <p class="plan-desc"Source code only. No hosting or support.</p>
   <p class="plan-price">$5.99 one-time</p>
 
   <style>.pp-QPKYDHKT7DZ9U{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
@@ -41,29 +41,13 @@
           <h4>Plan B – Full Bot, Hosted + Support</h4>
           <p class="plan-desc">Includes hosting, customized bot, and full support.</p>
           <p class="plan-price">$7.99/month</p>
-          <div id="paypal-button-container-P-0CA68502J79848250NB4XJXI"></div>
-<script src="https://www.paypal.com/sdk/js?client-id=AX_eRCZCIA0PaFPnzMTCzKFBVlnUF75dABEvDT6N6fBv1DuoC_69uhUvg6Meh5B9Z8KRYUUsgpWys77l&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'rect',
-          color: 'gold',
-          layout: 'vertical',
-          label: 'paypal'
-      },
-      createSubscription: function(data, actions) {
-        return actions.subscription.create({
-          /* Creates the subscription */
-          plan_id: 'P-0CA68502J79848250NB4XJXI'
-        });
-      },
-      onApprove: function(data, actions) {
-        alert(data.subscriptionID); // You can add optional success message for the subscriber here
-      }
-  }).render('#paypal-button-container-P-0CA68502J79848250NB4XJXI'); // Renders the PayPal button
-</script>
-        </div>
-
+          
+<style>.pp-7NPTZ5MFAUVS4{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
+<form action="https://www.paypal.com/ncp/payment/7NPTZ5MFAUVS4" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
+  <input class="pp-7NPTZ5MFAUVS4" type="submit" value="Pay Now" />
+  <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
+  <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+</form>
       </div>
     </section>
   </main>
