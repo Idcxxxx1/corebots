@@ -19,38 +19,29 @@
   </nav>
 
   <main>
-    <section class="paypal-order">
-      <h3>Choose a Plan to Purchase</h3>
-      <div class="plan-selection">
+  <section class="stripe-order">
+    <h3>Choose a Plan to Purchase</h3>
+    <div class="plan-selection">
 
-        <!-- Plan A: Hosted Button (HTML Form Version) -->
-<div class="plan-card">
-  <h4>Plan A – Code Only</h4>
-  <p class="plan-desc"Source code only. No hosting or support.</p>
-  <p class="plan-price">$5.99 one-time</p>
-
-  <style>.pp-QPKYDHKT7DZ9U{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-<form action="https://www.paypal.com/ncp/payment/QPKYDHKT7DZ9U" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-QPKYDHKT7DZ9U" type="submit" value="Pay Now" />
-  <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
-  <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-</form>
-</div>
-        <!-- Plan B: Subscription Button -->
-        <div class="plan-card">
-          <h4>Plan B – Full Bot, Hosted + Support</h4>
-          <p class="plan-desc">Includes hosting, customized bot, and full support.</p>
-          <p class="plan-price">$7.99/month</p>
-          
-<style>.pp-7NPTZ5MFAUVS4{text-align:center;border:none;border-radius:0.25rem;min-width:11.625rem;padding:0 2rem;height:2.625rem;font-weight:bold;background-color:#FFD140;color:#000000;font-family:"Helvetica Neue",Arial,sans-serif;font-size:1rem;line-height:1.25rem;cursor:pointer;}</style>
-<form action="https://www.paypal.com/ncp/payment/7NPTZ5MFAUVS4" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-  <input class="pp-7NPTZ5MFAUVS4" type="submit" value="Pay Now" />
-  <img src=https://www.paypalobjects.com/images/Debit_Credit_APM.svg alt="cards" />
-  <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-</form>
+      <!-- Plan A -->
+      <div class="plan-card">
+        <h4>Plan A – Code Only</h4>
+        <p class="plan-desc">Source code only. No hosting or support.</p>
+        <p class="plan-price">$5.99 one-time</p>
+        <a href="https://buy.stripe.com/test_7sY3cu1zy0ID9e9amT77O00" target="_blank" class="stripe-button">Buy Now</a>
       </div>
-    </section>
-  </main>
+
+      <!-- Plan B -->
+      <div class="plan-card">
+        <h4>Plan B – Hosted Bot + Support</h4>
+        <p class="plan-desc">Includes hosting, customized bot, and full support.</p>
+        <p class="plan-price">$7.99/month</p>
+        <a href="https://buy.stripe.com/test_8x2dR8gus62X8a57aH77O01" target="_blank" class="stripe-button">Subscribe</a>
+      </div>
+
+    </div>
+  </section>
+</main>
 
   <footer>
     &copy; 2025 CoreBots. All rights reserved.
