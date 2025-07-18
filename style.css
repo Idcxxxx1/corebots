@@ -476,3 +476,18 @@ footer {
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(106, 13, 173, 0.25);
 }
+.stripe-button {
+  background-color: #635bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.stripe-button:hover {
+  background-color: #5548d8;
+}
