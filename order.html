@@ -42,12 +42,35 @@
       </ol>
     </div>
 
-    <!-- ✅ Continue Button -->
-    <div class="continue-box">
-      <a href="payment.html">
-        <button class="continue-button">Continue to Order</button>
-      </a>
-    </div>
+    <!-- REPLACE the existing continue-box div with this new version -->
+<div class="continue-box">
+  <form id="order-form">
+    <label style="display: block; margin-bottom: 10px;">
+      <input type="checkbox" id="agree" required>
+      I have read and agree to the 
+      <a href="order-policy.html" target="_blank">CoreBots Order Policy</a>.
+    </label>
+
+    <button type="submit" class="continue-button">Continue to Order</button>
+  </form>
+</div>
+
+<script>
+  const form = document.getElementById('order-form');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const agreed = document.getElementById('agree').checked;
+    if (!agreed) {
+      alert('Please agree to the Order Policy before continuing.');
+      return;
+    }
+
+    // Redirect only if checkbox is checked
+    window.location.href = 'payment.html';
+  });
+</script>
 
     <section class="benefits">
       <h3>Why Order From Us?</h3>
