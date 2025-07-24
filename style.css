@@ -492,4 +492,24 @@ footer {
   background-color: #5548d8;
 }
 
+.discord-floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #5865F2;
+  color: white;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(88, 101, 242, 0.6);
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.discord-floating-btn:hover {
+  background-color: #4752c4;
+}
 
