@@ -492,22 +492,38 @@ footer {
   background-color: #5548d8;
 }
 
+nav {
+  display: flex;
+  align-items: center; /* vertical center all nav children */
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 2rem;
+  height: 56px; /* fixed nav height */
+  box-sizing: border-box;
+}
+
 .discord-button {
   background-color: #5865F2;
   color: white;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  padding: 8px 18px;
-  border-radius: 25px;
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  border-radius: 20px;
   display: inline-flex;
   align-items: center;
-  justify-content: center; /* center text horizontally */
-  height: 40px; /* fix height to align vertically with nav */
+  justify-content: center;
+  height: 32px; /* smaller height */
+  line-height: 1;
   text-decoration: none;
-  box-shadow: 0 4px 8px rgba(88, 101, 242, 0.4);
+  box-shadow: 0 3px 6px rgba(88, 101, 242, 0.4);
   white-space: nowrap;
   transition: background-color 0.3s ease;
+  flex-shrink: 0; /* prevent shrinking */
 }
 
 .discord-button:hover {
@@ -518,6 +534,7 @@ footer {
 @media (max-width: 640px) {
   nav {
     flex-wrap: wrap;
+    height: auto; /* allow nav height to grow on mobile */
   }
 
   .nav-links {
@@ -536,7 +553,9 @@ footer {
     border-radius: 12px;
     box-shadow: none;
     margin-top: 0.5rem;
-    height: auto; /* let height grow on mobile */
+    height: auto; /* auto height on mobile */
   }
+}
+
 }
 
