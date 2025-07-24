@@ -502,15 +502,12 @@ footer {
   border-radius: 25px;
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  justify-content: center; /* center text horizontally */
+  height: 40px; /* fix height to align vertically with nav */
   text-decoration: none;
   box-shadow: 0 4px 8px rgba(88, 101, 242, 0.4);
   white-space: nowrap;
   transition: background-color 0.3s ease;
-}
-
-.discord-button svg {
-  fill: white;
 }
 
 .discord-button:hover {
@@ -539,5 +536,7 @@ footer {
     border-radius: 12px;
     box-shadow: none;
     margin-top: 0.5rem;
+    height: auto; /* let height grow on mobile */
   }
 }
+
