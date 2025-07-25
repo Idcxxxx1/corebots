@@ -512,4 +512,60 @@ footer {
 .discord-floating-btn:hover {
   background-color: #4752c4;
 }
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup Content */
+.popup-content {
+  position: relative;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border: 2px solid #5e1b91;
+  border-radius: 12px;
+  padding: 30px 40px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 30px #000;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+  color: #b488f2;
+  font-size: 1.6rem;
+}
+
+.popup-content p {
+  font-size: 1rem;
+  margin: 15px 0 0;
+  line-height: 1.5;
+}
+
+/* Close Button */
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 1001;
+  transition: color 0.2s ease;
+}
+
+.popup-close:hover {
+  color: #b488f2;
+}
+
 
